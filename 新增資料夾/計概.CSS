@@ -1,4 +1,4 @@
-/* 基本樣式設定 */
+/* 通用設置 */
 * {
     margin: 0;
     padding: 0;
@@ -6,109 +6,133 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: #f7f7f7;
+    color: #333;
 }
 
-/* 頁首樣式 */
-header {
-    background: url('https://your-image-link.com/lantern.jpg') no-repeat center center/cover;
+h1, h2, h3 {
+    color: #E74C3C; /* 紅色 */
+}
+
+/* 頁首導航 */
+.navbar {
+    background-color: #333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo h1 {
+    color: #fff;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar nav ul li {
+    margin: 0 15px;
+}
+
+.navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar nav ul li a:hover {
+    color: #F39C12; /* 橙色 */
+}
+
+/* Hero區域 */
+.hero {
+    background-image: url('https://via.placeholder.com/1600x600');
+    background-size: cover;
+    text-align: center;
     color: white;
     padding: 100px 20px;
-    text-align: center;
-    background-size: cover;
-    background-position: center;
 }
 
-header h1 {
+.hero-text h1 {
     font-size: 3em;
-    font-weight: bold;
-    margin-bottom: 0.5em;
-}
-
-header p {
-    font-size: 1.3em;
-    font-weight: lighter;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-/* 段落樣式 */
-section {
-    padding: 60px 20px;
-    margin-bottom: 40px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-section h2 {
-    font-size: 2.5em;
-    margin-bottom: 1.5em;
-    color: #2c3e50;
-    text-align: center;
-}
-
-section p {
-    font-size: 1.2em;
-    color: #555;
-    line-height: 1.8;
-    text-align: justify;
-}
-
-section ul {
-    margin-top: 20px;
-    padding-left: 40px;
-}
-
-section ul li {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-
-/* 特定段落的設計 */
-#case-studies h3 {
-    font-size: 2em;
-    margin-top: 40px;
-    color: #34495e;
-}
-
-#case-studies p {
-    font-size: 1.1em;
     margin-bottom: 20px;
 }
 
-/* 頁尾樣式 */
-footer {
-    background-color: #2c3e50;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 50px;
+.hero-text p {
+    font-size: 1.5em;
 }
 
-/* 響應式設計 */
-@media (max-width: 768px) {
-    header {
-        padding: 80px 10px;
-    }
+/* 內容區域 */
+.section {
+    padding: 40px 20px;
+    background-color: #fff;
+}
 
-    header h1 {
-        font-size: 2.5em;
-    }
+.section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
 
-    section h2 {
-        font-size: 2em;
-    }
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
-    section p {
-        font-size: 1.1em;
-    }
+/* 燈會歷史圖片 */
+.history-img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
 
-    section ul li {
-        font-size: 1em;
-    }
+/* 功能區域 */
+.features {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.feature {
+    width: 45%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 聯絡表單 */
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #E74C3C;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #C0392B;
+}
+
+/* 頁尾 */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 

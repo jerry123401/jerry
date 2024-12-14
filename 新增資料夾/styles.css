@@ -87,30 +87,6 @@ ul li {
     margin-bottom: 0.5rem;
 }
 
-/* 圖庫樣式 */
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-}
-
-.gallery-item {
-    text-align: center;
-    width: 200px;
-}
-
-.gallery-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.gallery-item p {
-    margin-top: 0.5rem;
-    font-size: 1rem;
-}
 
 /* 頁腳樣式 */
 .footer {

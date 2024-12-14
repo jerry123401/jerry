@@ -1,109 +1,122 @@
-/* 重置樣式 */
-* {
+/* 全局樣式 */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #fdf3e7;
+    background-color: #f9f9f9;
     color: #333;
-    margin: 0;
 }
 
+h1, h2 {
+    color: #0056b3;
+}
+
+/* 導航欄樣式 */
 .navbar {
-    background-color: #b71c1c;
+    background-color: #0056b3;
     color: white;
-    padding: 20px;
-    text-align: center;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .navbar h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
+    margin: 0;
+    font-size: 1.5rem;
 }
 
 .navbar ul {
-    list-style: none;
+    list-style-type: none;
+    margin: 0;
     padding: 0;
-    margin-top: 10px;
+    display: flex;
+    gap: 1rem;
 }
 
-.navbar ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-.navbar ul li a {
+.navbar a {
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* 英雄區樣式 */
 .hero {
-    background: linear-gradient(rgba(183, 28, 28, 0.8), rgba(183, 28, 28, 0.8)), url('hero-bg.jpg') center/cover;
-    color: white;
     text-align: center;
-    padding: 100px 20px;
+    padding: 2rem;
+    background: linear-gradient(to right, #e0f7fa, #ffffff);
 }
 
 .hero h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
+    font-size: 2rem;
 }
 
 .hero p {
-    font-size: 1.2em;
+    font-size: 1.2rem;
+    color: #555;
 }
 
+/* 區段樣式 */
 .section {
-    padding: 40px 20px;
-    text-align: center;
+    padding: 2rem;
+    background-color: #fff;
+    margin: 1rem 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.section:nth-child(even) {
-    background-color: #ffe0b2;
+.section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
 }
 
+.section p {
+    line-height: 1.6;
+}
+
+/* 清單樣式 */
+ul {
+    padding-left: 1.5rem;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* 圖庫樣式 */
 .gallery {
     display: flex;
-    justify-content: center;
-    gap: 20px;
     flex-wrap: wrap;
-    margin-top: 20px;
+    gap: 1rem;
+    justify-content: center;
 }
 
 .gallery-item {
-    flex: 1 1 300px;
-    background-color: #fff;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
     text-align: center;
+    width: 200px;
 }
 
 .gallery-item img {
-    max-width: 100%;
-    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .gallery-item p {
-    margin-top: 10px;
-    font-weight: bold;
-    color: #b71c1c;
+    margin-top: 0.5rem;
+    font-size: 1rem;
 }
 
+/* 頁腳樣式 */
 .footer {
-    background-color: #333;
-    color: white;
     text-align: center;
-    padding: 20px;
-    margin-top: 20px;
+    background-color: #0056b3;
+    color: white;
+    padding: 1rem;
+    margin-top: 2rem;
 }
-
-.footer p {
-    margin: 0;
-}
-

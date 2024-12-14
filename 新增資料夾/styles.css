@@ -1,4 +1,4 @@
-/* 通用設置 */
+/* 重置樣式 */
 * {
     margin: 0;
     padding: 0;
@@ -6,133 +6,104 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #f7f7f7;
+    background-color: #fdf3e7;
     color: #333;
+    margin: 0;
 }
 
-h1, h2, h3 {
-    color: #E74C3C; /* 紅色 */
-}
-
-/* 頁首導航 */
 .navbar {
-    background-color: #333;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: #b71c1c;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
-.navbar .logo h1 {
-    color: #fff;
+.navbar h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
 }
 
-.navbar nav ul {
+.navbar ul {
     list-style: none;
-    display: flex;
+    padding: 0;
+    margin-top: 10px;
 }
 
-.navbar nav ul li {
+.navbar ul li {
+    display: inline;
     margin: 0 15px;
 }
 
-.navbar nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.navbar nav ul li a:hover {
-    color: #F39C12; /* 橙色 */
-}
-
-/* Hero區域 */
-.hero {
-    background-image: url('https://via.placeholder.com/1600x600');
-    background-size: cover;
-    text-align: center;
+.navbar ul li a {
     color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background: linear-gradient(rgba(183, 28, 28, 0.8), rgba(183, 28, 28, 0.8)), url('hero-bg.jpg') center/cover;
+    color: white;
+    text-align: center;
     padding: 100px 20px;
 }
 
-.hero-text h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
-}
-
-.hero-text p {
-    font-size: 1.5em;
-}
-
-/* 內容區域 */
-.section {
-    padding: 40px 20px;
-    background-color: #fff;
-}
-
-.section h2 {
+.hero h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.section {
+    padding: 40px 20px;
     text-align: center;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+.section:nth-child(even) {
+    background-color: #ffe0b2;
 }
 
-/* 燈會歷史圖片 */
-.history-img {
-    width: 100%;
-    height: auto;
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
     margin-top: 20px;
 }
 
-/* 功能區域 */
-.features {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
-}
-
-.feature {
-    width: 45%;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* 聯絡表單 */
-form input, form textarea {
-    width: 100%;
+.gallery-item {
+    flex: 1 1 300px;
+    background-color: #fff;
     padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.gallery-item img {
+    max-width: 100%;
     border-radius: 5px;
 }
 
-form button {
-    background-color: #E74C3C;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
+.gallery-item p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #b71c1c;
 }
 
-form button:hover {
-    background-color: #C0392B;
-}
-
-/* 頁尾 */
 .footer {
     background-color: #333;
     color: white;
-    padding: 20px;
     text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footer p {
+    margin: 0;
 }
 
